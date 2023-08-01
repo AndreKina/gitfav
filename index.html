@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./src/main.js" type="module" defer></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <img
+          src="./static/images/Gitfav.svg"
+          alt="Logo de uma estrela entre chaves"
+          class="img-logo"
+        />
+        <div class="search-div">
+          <label for="gitfav-search" class="sr-only"
+            >Input nome do usuário para busca</label
+          >
+          <input
+            type="text"
+            name="gitfav-search"
+            id="gitfav-search"
+            placeholder="Digite o Github username que quer favoritar"
+          />
+          <button id="search-btn">
+            <div class="button-star"></div>
+            <div class="button-star-hover display-none"></div>
+            Favoritar
+          </button>
+        </div>
+      </header>
+      <main>
+        <table id="main-tb">
+          <thead>
+            <tr>
+              <th>Usuário</th>
+              <th>Repositories</th>
+              <th>Followers</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="user">
+                <img
+                  src="./static/images/profile-img.svg"
+                  alt="Imagem do usuário"
+                />
+                <div>
+                  <a href="https://github.com/andrevkf" target="_blank">
+                    <p>Lupet Bolota</p>
+                    <span>/Lupet</span>
+                  </a>
+                </div>
+              </td>
+              <td>123</td>
+              <td>1234</td>
+              <td><span class="remove">Remover</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>
